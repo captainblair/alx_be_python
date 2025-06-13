@@ -13,8 +13,8 @@ class BankAccount: #Defining a class to represent bank account
         else:
             return False #Not enough funds 
         
-    def display_balance(self): # Method to show the current balance 
-        print(f"Current balance: ${self.__account_balance}") #Print balance
+    def display_balance(self):  # shows the balance
+    print(f"Current Balance: ${self.__balance}")
         
 
 
