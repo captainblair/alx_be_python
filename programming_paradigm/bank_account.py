@@ -13,4 +13,5 @@ class BankAccount:  # Class for bank account operations
             return False  # Not enough funds
 
     def display_balance(self):  # Method to show balance
-        print(f"Current Balance: ${self.__balance}")  # Display balance with exact wording
+        print(f"Current Balance: ${self.__balance:.2f}")
+  # Display balance with exact wording
