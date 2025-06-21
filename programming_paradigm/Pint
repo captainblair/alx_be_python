@@ -1,0 +1,40 @@
+class Dog:
+    def __init__(self, name, age, breed, favourite_snack, tricks):
+        self.name = name
+        self.age = age
+        self.breed = breed
+        self.favourite_snack = favourite_snack
+        self.tricks = tricks
+        
+    def bark(self):
+        print(f"{self.name} says: woof! woof!") 
+        
+    def do_tricks(self):
+        if self.tricks:
+            print(f"{self.name} performs a trick: {self.tricks[0]} ")
+        else:
+            print(f"{self.name} does not have any tricks yet 😃")
+            
+    def show_profile(self):
+        print(f"Meet: {self.name}")
+        print(f"age: {self.age}")
+        print(f"Breed: {self.breed}")
+        print(f"loves: {self.favourite_snack}")
+        print(f"Knows tricks: {', '.join(self.tricks) if self.tricks else 'None'}")
+
+        
+    #Creating the Object Dog
+    
+fancy_dog = Dog(
+        name = "Scooby",
+        age = 3,
+        breed = "Golden Retriever",
+        favourite_snack = "Chicken biscuits",
+        tricks = ["sit", "shake paw", "Roll aover"]
+    )
+    
+# Testing all the features 
+
+fancy_dog.bark()
+fancy_dog.do_tricks()
+fancy_dog.show_profile()
